@@ -1,14 +1,8 @@
-import Button from '@mui/material/Button';
+import React from 'react'
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <h1 className="text-center text-3xl font-bold underline">
-      Hello From tailwind
-    </h1>
-    <Button  variant="contained">Hello From mui</Button>
-    </>
+    <div>App</div>
   )
 }
 
