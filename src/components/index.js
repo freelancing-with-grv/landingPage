@@ -3,7 +3,8 @@ import Landing from "./home/landing";
 import Marquee from "./marquee";
 import About from "./home/about";
 import Eye from "./home/eyes";
-
+import Cards from "./home/cards";
+import Footer from "./footer";
 
 
 
@@ -14,6 +15,8 @@ export {
     Landing,
     Marquee,
     About,
-    Eye
+    Eye,
+    Cards,
+    Footer
     
 }
