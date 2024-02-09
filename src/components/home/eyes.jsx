@@ -1,4 +1,4 @@
-import { useEyeMovement } from "../hooks";
+import { useEyeMovement } from "../../hooks";
 
 const Eye = () => {
   const rotate = useEyeMovement();
