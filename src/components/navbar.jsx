@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     // font-["Neue_Montreqal"]
-    <div className='fixed z-[999] w-full px-20 py-8  flex justify-between'>
+    <div className="fixed z-[999] w-full px-20 py-8  flex justify-between">
       <div className="logo">
         <svg
           width="72"
@@ -35,11 +35,18 @@ const Navbar = () => {
         </svg>
       </div>
       <div className="links flex gap-10">
-        {["Servies","Our Work","About Us","Insights","Contact"].map((item,index)=>(
-            <a key={index} className={`text-lg capitalize font-light ${index === 4 && "ml-32"}`}>
-                {item}
+        {["Servies", "Our Work", "About Us", "Insights", "Contact"].map(
+          (item, index) => (
+            <a
+              key={index}
+              className={`text-lg capitalize font-light ${
+                index === 4 && "ml-32"
+              }`}
+            >
+              {item}
             </a>
-        ))}
+          )
+        )}
       </div>
     </div>
   );

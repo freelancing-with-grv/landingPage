@@ -5,7 +5,7 @@ import { Home } from './pages'
 const App = () => {
   return (
     <>
-    <div className='w-full h-screen text-white bg-zinc-900'>
+    <div className='w-full min-h-screen text-white'>
       <Navbar/>
       <Home/>
     </div>
