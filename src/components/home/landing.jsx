@@ -3,18 +3,29 @@ import React from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 
 const Landing = () => {
-  
   return (
     <>
-    
-      <div  className="textstructure h-[50vh] mt-40 px-20">
+      <div className="textstructure h-[50vh] mt-40 px-20">
         {["We Create", "Eye-Opening", "PRESENTATIONS"].map((item, index) => (
           <div className="masker" key={index}>
             <div className="w-fit flex items-end">
-              {index === 1 && <motion.div initial={{width:0}} animate={{width:"9vw"}} transition={{ease:[0.76,0,0.24,1],duration:3}} className="w-[9vw] rounded-md mr-[0.3vw] bg-red-500 h-[5.4vw]"></motion.div>}
+              {index === 1 && (
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "9vw" }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 3 }}
+                  className="w-[9vw] rounded-md mr-[0.3vw] h-[5.4vw]"
+                >
+                  <img
+                    className="w-full h-full object-cover object-center"
+                    src="https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg"
+                    alt=""
+                  />
+                </motion.div>
+              )}
 
               {/*font-['Founders_Grotesk_X_Condensed_Light']*/}
-              <h1 className="text-[7.5vw] uppercase leading-[6vw]  tracking-tighter font-medium ">
+              <h1 className="text-[7.5vw] uppercase leading-[6vw] tracking-tighter font-medium">
                 {item}
               </h1>
             </div>
