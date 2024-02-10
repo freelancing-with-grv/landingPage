@@ -47,7 +47,7 @@ const Home = () => {
           className="about-wrapper"
           data-scroll-section
           data-scroll
-          data-scroll-speed="-.19"
+          data-scroll-speed="-.15"
           data-scroll-position="top"
         >
           <About />
