@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
-import { Power4 } from "gsap";
 import React, { useState } from "react";
-import useTextAnimation from "../../hooks/useTextAnimation";
-
+import { useTextAnimation } from "../../hooks";
 
 function Featured() {
   const [hoveredItem, setHoveredItem] = useState(null);
-  const animatedText = useTextAnimation(
-    hoveredItem === card && hoveredItem.name
+  const textanimation = useTextAnimation(
+    !hoveredItem === null && hoveredItem.name
   );
 
   const cardsData = [
@@ -73,7 +71,7 @@ function Featured() {
             </div>
             <div className="heading absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
               <h1 className="text-8xl overflow-hidden font-semibold text-[#CDEA68] text-center">
-              {animatedText}
+                {textanimation}
               </h1>
             </div>
           </div>

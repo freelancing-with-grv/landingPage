@@ -33,7 +33,7 @@ const Home = () => {
         <div className="marquee-wrapper" data-scroll-section  data-scroll data-scroll-speed="-.2" >
           <Marquee/>
         </div>
-        <div className="about-wrapper" data-scroll-section data-scroll data-scroll-speed="-.1" data-scroll-position="top" >
+        <div className="about-wrapper" data-scroll-section data-scroll data-scroll-speed="-.19" data-scroll-position="top" >
           <About />
         </div>
         <div className="eye-wrapper" data-scroll-section>

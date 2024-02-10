@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
-export const useTextAnimation = (textArray) => {
+ export const useTextAnimation = (textArray) => {
   const spanRefs = useRef([]);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export const useTextAnimation = (textArray) => {
 
   return (
     <>
-      {textArray.map((item, index) => (
+      {textArray&& textArray.map((item, index) => (
         <motion.span
           key={index}
           ref={(element) => (spanRefs.current[index] = element)}
@@ -32,5 +32,8 @@ export const useTextAnimation = (textArray) => {
     </>
   );
 };
+
+
+
 
 
