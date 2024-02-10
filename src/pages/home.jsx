@@ -27,13 +27,29 @@ const Home = () => {
   return (
     <div className="w-full min-h-screen bg-zinc-900 pt-1">
       <div ref={scrollRef} data-scroll-container>
-        <div className="landing-wrapper " data-scroll-section data-scroll data-scroll-speed="-0.3" >
+        <div
+          className="landing-wrapper "
+          data-scroll-section
+          data-scroll
+          data-scroll-speed="-0.3"
+        >
           <Landing />
         </div>
-        <div className="marquee-wrapper" data-scroll-section  data-scroll data-scroll-speed="-.2" >
-          <Marquee/>
+        <div
+          className="marquee-wrapper"
+          data-scroll-section
+          data-scroll
+          data-scroll-speed="-.2"
+        >
+          <Marquee />
         </div>
-        <div className="about-wrapper" data-scroll-section data-scroll data-scroll-speed="-.19" data-scroll-position="top" >
+        <div
+          className="about-wrapper"
+          data-scroll-section
+          data-scroll
+          data-scroll-speed="-.19"
+          data-scroll-position="top"
+        >
           <About />
         </div>
         <div className="eye-wrapper" data-scroll-section>
