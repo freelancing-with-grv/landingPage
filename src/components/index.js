@@ -5,6 +5,7 @@ import About from "./home/about";
 import Eye from "./home/eyes";
 import Cards from "./home/cards";
 import Footer from "./footer";
+import Featured from "./home/featured";
 
 
 
@@ -17,6 +18,7 @@ export {
     About,
     Eye,
     Cards,
-    Footer
+    Footer,
+    Featured
     
 }
